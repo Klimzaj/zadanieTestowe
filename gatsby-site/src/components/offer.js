@@ -38,33 +38,54 @@ const data = [
     }
   ]
 const H1 = styled.h1`
-    color: red;
-    text-aligne: center; 
+    font-size: 25px;
+    margin-bottom: 5px;
 `
-const H2 = styled.h2``
+const H2 = styled.p`
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-style: italic;
+`
 
 const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-//   text-align: center;
-  height: 700px;
+    padding-top: 80px;
+    padding-left: 280px;
+    padding-right: 280px;  
+    background: white;
+    // background: blue;
+    height: 700px;
 `
 
 const WrapperContent = styled.section`
-  text-aligne: center;
-  display: grid;
-  grid: auto / auto auto;
-  justify-items: center;
+    display: grid;
+    grid: auto / auto auto;
+    justify-items: center;
   
+`
+const TitleDiv = styled.section`
+    text-align: center;
+    line-height: 12px;
+    
+
+`
+
+const MyBorder = styled.section`
+  background-color: yellow;
+  width: 34px;
+  height: 10px;
+  margin-bottom: 35px;
 `
 
 const Offer = () => (
   <div>
     <Wrapper>
-        <center>
+        <TitleDiv>
         <H1>What we Offer</H1>
         <H2>TAILORED LOGISTIC SERVICES</H2>
+        <center>
+        <MyBorder></MyBorder>
         </center>
+        </TitleDiv>
         {/* <OfferContent/> */}
         {/* <OfferContent data={data.n}/> */}
         <WrapperContent>
