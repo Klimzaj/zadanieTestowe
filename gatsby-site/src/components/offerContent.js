@@ -1,18 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper2 = styled.section`
-  padding: 4em;
+const Wrapper = styled.section`
+  padding: 10px;
   background: white;
-  text-align: center;
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  
+//   text-align: right;
+`
+const Par = styled.p`
+    font-size: 10px;
+    text-align: justify;
+`
+const Div = styled.div`
+    padding: 10px;
 `
 
 const OfferContent = ({data}) => (
-  <div>
-    <Wrapper2>
-        <h3>{data}</h3>
-    </Wrapper2>
-  </div>
+
+    <Wrapper>
+        <img src={"http://placehold.it/150/150"}/>
+        <Div>
+            <h3>{data.title}</h3>
+            <Par>{data.content.content}</Par>
+        </Div>
+    </Wrapper>
+
 )
 
 export default OfferContent

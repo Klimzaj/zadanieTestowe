@@ -46,22 +46,30 @@ const H2 = styled.h2``
 const Wrapper = styled.section`
   padding: 4em;
   background: papayawhip;
-  text-align: center;
+//   text-align: center;
+  height: 700px;
 `
 
-const Printtt = ({a})=>{
-    return (<p>{a}</p>)
-}
+const WrapperContent = styled.section`
+  text-aligne: center;
+  display: grid;
+  grid: auto / auto auto;
+  justify-items: center;
+  
+`
 
 const Offer = () => (
   <div>
     <Wrapper>
+        <center>
         <H1>What we Offer</H1>
         <H2>TAILORED LOGISTIC SERVICES</H2>
+        </center>
         {/* <OfferContent/> */}
         {/* <OfferContent data={data.n}/> */}
-        {data.map((node)=><OfferContent data={node.node.title}/>)}
-        {data.map((node)=>console.log(node.node))}
+        <WrapperContent>
+        {data.map((node)=><OfferContent data={node.node}/>)}
+        </WrapperContent>
     </Wrapper>
   </div>
 )
