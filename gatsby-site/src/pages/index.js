@@ -7,23 +7,8 @@ const IndexPage = (props) => {
   
   return (
   <div>
-    <Offer />
+    <p>IndexPage</p>
   </div>
 )}
 
 export default IndexPage
-
-export const pageQuery = graphql`
-query PageQuery
-{
-  allContentfulWhatWeOfferContent {
-    edges {
-      node {
-        title
-        content {
-          content
-        }
-      }
-    }
-  }  
-}`

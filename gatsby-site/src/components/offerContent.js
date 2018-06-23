@@ -3,12 +3,13 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
   padding: 10px;
-  background: white;
-  width: 450px;
-  height: auto;
+  padding-top: 44px;
+  background: #fcfcfc;
+  width: 360px;
+  height: 183px;
   margin: 10px;
   display: flex;
-  
+  justify-content: center;
 `
 const Par = styled.p`
     font-size: 10px;
@@ -26,16 +27,16 @@ const ContentTitle = styled.p`
 
 `
 
+
 const OfferContent = ({data}) => (
 
     <Wrapper>
-        <img src={"http://placehold.it/120/120"}/>
+        <img src={data.img.file.url} width={data.img.file.details.image.width} height={data.img.file.details.image.height}/>
         <Div>
             <ContentTitle>{data.title}</ContentTitle>
             <Par>{data.content.content}</Par>
         </Div>
     </Wrapper>
-
 )
 
 export default OfferContent

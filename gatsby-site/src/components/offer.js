@@ -15,11 +15,10 @@ const H2 = styled.p`
 
 const Wrapper = styled.section`
     padding-top: 80px;
-    padding-left: 280px;
-    padding-right: 280px;  
+    padding-left: 370px;
+    padding-right: 370px;  
     background: white;
-    // background: blue;
-    height: 700px;
+    height: 637px;
 `
 
 const WrapperContent = styled.section`
@@ -35,27 +34,16 @@ const TitleDiv = styled.section`
 
 `
 
-const MyBorder = styled.section`
-  background-color: yellow;
-  width: 34px;
-  height: 10px;
-  margin-bottom: 35px;
-`
-
-const Offer = ({offers}) => (
+const Offer = ({offers,infos}) => (
   <div>
     <Wrapper>
         <TitleDiv>
-        <H1>What we Offer</H1>
-        <H2>TAILORED LOGISTIC SERVICES</H2>
-        <center>
-        <MyBorder></MyBorder>
-        </center>
+            <H1>{infos.title}</H1>
+            <H2>{infos.secondaryTitle}</H2>
+            <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height}/>
         </TitleDiv>
-        {/* <OfferContent/> */}
-        {/* <OfferContent data={data.n}/> */}
         <WrapperContent>
-        {offers.map((node)=><OfferContent data={node.node}/>)}
+            {offers.map((node)=><OfferContent data={node.node}/>)}
         </WrapperContent>
     </Wrapper>
   </div>
