@@ -4,11 +4,11 @@ import Offer from '../components/offer';
 import Hero from '../components/hero';
 
 const OfferPage = ({data}) => {
-  // console.log(data.allContentfulHeroContent.edges)
+  // console.log(data.allContentfulMenu.edges[0].node)
   
   return (
   <div>
-    <Hero offers = {data.allContentfulHeroContent.edges} infos = {data.allContentfulHeroInfo.edges[0].node}/>
+    <Hero offers = {data.allContentfulHeroContent.edges} infos = {data.allContentfulHeroInfo.edges[0].node} manuInfo = {data.allContentfulMenu.edges[0].node}/>
     <Offer offers = {data.allContentfulWhatWeOfferContent.edges} infos={data.allContentfulWhatWeOferInfo.edges[0].node}/>
   </div>
 )}

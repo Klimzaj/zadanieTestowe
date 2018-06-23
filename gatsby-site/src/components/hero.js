@@ -15,7 +15,7 @@ const WrapperContent = styled.section`
     // grid: auto / auto auto auto;
     justify-content: space-around;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 45px;
@@ -36,7 +36,8 @@ const TitleDiv = styled.div`
 
 const Hero = ({ manuInfo,infos,offers }) => (
   <Wrapper>
-    {/* <Menu manuInfo = {manuInfo}/> */}
+    <div/>
+    <Menu info = {manuInfo}/>
     <TitleDiv>
       <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height} />
       <P>{infos.mainTitle1}</P>
