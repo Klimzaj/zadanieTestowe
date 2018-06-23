@@ -2,19 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Offer from '../components/offer';
 
-const IndexPage = (props) => {
-  console.log(props)
+const OfferPage = ({data}) => {
+  console.log(data.allContentfulWhatWeOfferContent.edges)
   
   return (
   <div>
-    <Offer />
+    <Offer offers = {data.allContentfulWhatWeOfferContent.edges}/>
   </div>
 )}
 
-export default IndexPage
+export default OfferPage
 
 export const pageQuery = graphql`
-query PageQuery
+query offerQuery
 {
   allContentfulWhatWeOfferContent {
     edges {
