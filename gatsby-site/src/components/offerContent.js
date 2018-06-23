@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
   padding: 10px;
   padding-top: 44px;
   background: #fcfcfc;
@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
 `
-const Par = styled.p`
+const P = styled.p`
     font-size: 10px;
     text-align: justify;
     line-height: 12px;
@@ -34,7 +34,7 @@ const OfferContent = ({data}) => (
         <img src={data.img.file.url} width={data.img.file.details.image.width} height={data.img.file.details.image.height}/>
         <Div>
             <ContentTitle>{data.title}</ContentTitle>
-            <Par>{data.content.content}</Par>
+            <P>{data.content.content}</P>
         </Div>
     </Wrapper>
 )

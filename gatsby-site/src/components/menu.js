@@ -1,12 +1,10 @@
 import React from 'react'
 
-const Menu = () => (
+const Menu = ({menuInfo}) => (
   <div>
+    
     <nav>
-        <a >HOME </a>
-        <a >ABOUT US </a>
-        <a >aaa </a>
-        <a >aaa </a>
+        
     </nav>
   </div>
 )

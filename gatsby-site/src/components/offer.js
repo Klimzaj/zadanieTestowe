@@ -21,10 +21,12 @@ const Wrapper = styled.section`
     height: 637px;
 `
 
-const WrapperContent = styled.section`
+const WrapperContent = styled.div`
     display: grid;
     grid: auto / auto auto;
     justify-items: center;
+    // margin-left: 300px;
+    // margin-right: 300px;
   
 `
 const TitleDiv = styled.section`
