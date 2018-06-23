@@ -15,6 +15,8 @@ const WrapperContent = styled.section`
     // grid: auto / auto auto auto;
     justify-content: space-around;
     justify-content: center;
+    flex-direction: row-reverse;
+
     margin-top: 160px;
     margin-left: auto;
     margin-right: auto;
