@@ -25,8 +25,8 @@ const WrapperContent = styled.div`
     display: grid;
     grid: auto / auto auto;
     justify-items: center;
-    // margin-left: 300px;
-    // margin-right: 300px;
+    margin-left: 190px;
+    margin-right: 190px;
   
 `
 const TitleDiv = styled.section`

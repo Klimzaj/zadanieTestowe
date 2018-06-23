@@ -143,6 +143,17 @@ query offerQuery
             }
           }
         }
+        img{
+          file {
+            url
+            details {
+              image {
+                width
+                height
+              }
+            }
+          }
+        }
         logoImg {
           file {
             url

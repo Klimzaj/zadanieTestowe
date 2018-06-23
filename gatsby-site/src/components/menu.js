@@ -16,6 +16,7 @@ const WrapperMenu = styled.div`
   display:flex;
   align-items: center;
   border-radius: 2px;
+  z-index:1;
   
 `
 const Img = styled.img`
@@ -43,6 +44,12 @@ const SearchImg = styled.img`
   margin-left: 10px;
 
 `
+const UnderImg = styled.img`
+  position: relative;
+  left: 455px;
+  top: -5px;
+  z-index: 2;
+`
 
 const Menu = ({info}) => {
   // console.log(info)
@@ -60,6 +67,7 @@ const Menu = ({info}) => {
             <SearchImg src={info.serchImg.file.url} height={info.serchImg.file.details.image.height} width={info.serchImg.file.details.image.width}/>
         </Nav>
     </WrapperMenu>
+    <UnderImg src={info.img.file.url} />
   </Wrapper>
 )}
 

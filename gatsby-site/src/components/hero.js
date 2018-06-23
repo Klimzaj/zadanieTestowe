@@ -35,7 +35,7 @@ const TitleDiv = styled.div`
 `
 const BG1 = styled.div`
   position: relative;
-  top: -321px;
+  top: -326px;
   right: 0;
   z-index: 1;
   width: 100%;
@@ -44,7 +44,7 @@ const BG1 = styled.div`
 `
 const BG2 = styled.div`
   position: relative;
-  top: -659px;
+  top: -661px;
   right: 0;
   z-index: 2;
   width: 100%;
