@@ -40,7 +40,6 @@ const P = styled.p`
     line-height: 16px;
 `
 const HeroContent = ({data}) => {
-    // console.log(data.readMoreImg)
     return(
   <WrapperContent>
     <WrapperUp>

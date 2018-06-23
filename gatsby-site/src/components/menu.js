@@ -45,7 +45,7 @@ const SearchImg = styled.img`
 `
 
 const Menu = ({info}) => {
-  console.log(info)
+  // console.log(info)
   return(
   <Wrapper>
     <WrapperMenu>
