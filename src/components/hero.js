@@ -33,7 +33,8 @@ const P = styled.h1`
 
 const TitleDiv = styled.div`
     padding-top: 210px;
-    margin-left: 20%;
+    // margin-left: 20%;
+    margin-left: 380px;
     
 `
 const BG1 = styled.div`

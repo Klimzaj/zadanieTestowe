@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 
 const Wrapper = styled.div`
-  margin-left: 20%;
+  // margin-left: 20%;
+  margin-left: 380px;
   height: 50px;
   width: 789px;
   padding-top:50px
