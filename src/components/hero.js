@@ -68,6 +68,7 @@ const MenuDist = styled.div`
    width: 340px;
 `
 
+
 const Hero = ({ manuInfo,infos,offers }) => (
   <Wrapper>
     <div/>
@@ -82,6 +83,7 @@ const Hero = ({ manuInfo,infos,offers }) => (
       <P>{infos.mainTitle3}</P>
     </TitleDiv>
     <BGContent>
+    
     <WrapperContent>
       {offers.map((node)=><HeroContent data={node.node}/>)}
     </WrapperContent>

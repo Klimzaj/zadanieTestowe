@@ -36,6 +36,11 @@ const TitleDiv = styled.section`
 
 `
 
+const TestDiv = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
 const Offer = ({offers,infos}) => (
   <div>
     <Wrapper>
@@ -44,9 +49,12 @@ const Offer = ({offers,infos}) => (
             <H2>{infos.secondaryTitle}</H2>
             <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height}/>
         </TitleDiv>
-        <WrapperContent>
-            {offers.map((node)=><OfferContent data={node.node}/>)}
-        </WrapperContent>
+
+        <TestDiv>
+            <WrapperContent>
+                {offers.map((node)=><OfferContent data={node.node}/>)}
+            </WrapperContent>
+        </TestDiv>
     </Wrapper>
   </div>
 )
