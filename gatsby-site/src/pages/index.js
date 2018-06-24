@@ -1,14 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Offer from '../components/offer';
 
-const IndexPage = (props) => {
-  console.log(props)
-  
-  return (
+const IndexPage = () => (
   <div>
-    <p>IndexPage</p>
+      <center>
+        <h1>Do you want to see my page?</h1>
+        <a href={'/offer'} >Click me!</a>
+    </center>
   </div>
-)}
+)
 
 export default IndexPage
