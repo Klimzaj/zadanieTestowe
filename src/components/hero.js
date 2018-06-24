@@ -60,11 +60,21 @@ const BGContent = styled.section`
   z-index: 3;
   
 `
+const MenuCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`
+const MenuDist = styled.div`
+   width: 340px;
+`
 
 const Hero = ({ manuInfo,infos,offers }) => (
   <Wrapper>
     <div/>
-    <Menu info = {manuInfo}/>
+    <MenuCenter>
+      <Menu info = {manuInfo}/>
+      <MenuDist/>
+    </MenuCenter>
     <TitleDiv>
       <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height} />
       <P>{infos.mainTitle1}</P>
