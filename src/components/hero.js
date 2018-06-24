@@ -34,7 +34,7 @@ const P = styled.h1`
 const TitleDiv = styled.div`
     padding-top: 210px;
     // margin-left: 20%;
-    margin-left: 380px;
+    // margin-left: 380px;
     
 `
 const BG1 = styled.div`
@@ -68,20 +68,31 @@ const MenuDist = styled.div`
    width: 340px;
 `
 
+const TitleCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`
+const TitleDist = styled.div`
+   width: 640px;
+`
+
 
 const Hero = ({ manuInfo,infos,offers }) => (
   <Wrapper>
-    <div/>
+    
     <MenuCenter>
       <Menu info = {manuInfo}/>
       <MenuDist/>
     </MenuCenter>
-    <TitleDiv>
-      <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height} />
-      <P>{infos.mainTitle1}</P>
-      <P>{infos.mainTitle2}</P>
-      <P>{infos.mainTitle3}</P>
-    </TitleDiv>
+    <TitleCenter>
+      <TitleDiv>
+        <img src={infos.img.file.url} width={infos.img.file.details.image.width} height={infos.img.file.details.image.height} />
+        <P>{infos.mainTitle1}</P>
+        <P>{infos.mainTitle2}</P>
+        <P>{infos.mainTitle3}</P>
+      </TitleDiv>
+      <TitleDist/>
+    </TitleCenter>
     <BGContent>
     
     <WrapperContent>
