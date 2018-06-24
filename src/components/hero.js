@@ -8,6 +8,7 @@ const Wrapper = styled.section`
     background: #122636;
     height: 1189px;
     // height: 789px;
+    width: 100%;
 `
 
 const WrapperContent = styled.section`
